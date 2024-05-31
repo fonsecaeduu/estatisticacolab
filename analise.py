@@ -34,7 +34,7 @@ max_privada = privada.max()
 print(f'Escola Pública - Média: {media_publica:.2f}, Desvio Padrão: {desvio_publica:.2f}, Mínima: {min_publica:.2f}, Máxima: {max_publica:.2f}')
 print(f'Escola Privada - Média: {media_privada:.2f}, Desvio Padrão: {desvio_privada:.2f}, Mínima: {min_privada:.2f}, Máxima: {max_privada:.2f}')
 
-t_stat, p_value = stats.ttest_ind(publica, privada, equal_var=False) # equal_var=False para não assumir variâncias iguais
+t_stat, p_value = stats.ttest_ind(publica, privada, equal_var=False)
 
 print(f'Testatística: {t_stat:.2f}, Valor-p: {p_value:.5f}')
 
